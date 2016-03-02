@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundmain"
+    tools:context="com.kiet.ecell.endeavour.LoginActivity">
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/container_toolbar"
+        android:gravity="center"
+        >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="24dp"
+        android:paddingTop="24dp"
+        android:background="#e62d2d2d"
+        >
+
+        <com.kiet.ecell.endeavour.YourTextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Login"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textStyle="bold"
+            android:id="@+id/login"
+            android:textColor="#ffd100"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_email"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/login"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/username"
+                android:drawablePadding="8dp"
+                android:textColor="#DCDCDC"
+                android:inputType="textEmailAddress"
+                android:hint="Email" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_pass"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/input_layout_email"
+            android:layout_marginTop="12dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/lock"
+                android:drawablePadding="8dp"
+                android:textColor="#DCDCDC"
+                android:inputType="textPassword"
+                android:hint="Code" />
+        </android.support.design.widget.TextInputLayout>
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/input_layout_pass"
+            android:layout_marginTop="16dp"
+            android:textColor="#DCDCDC"
+            android:text="Show Code" />
+
+        <com.kiet.ecell.endeavour.YourButton
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/checkBox1"
+            android:layout_marginTop="16dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:gravity="center"
+            android:background="@drawable/buttoncurve"
+            android:text="Login" />
+        <com.kiet.ecell.endeavour.YourTextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Note: For Code please refer to your Email ID"
+            android:layout_below="@+id/button1"
+            android:layout_marginTop="24dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="bold"
+            android:id="@+id/note"
+            android:textColor="#ff3300"
+            />
+    </RelativeLayout>
+    </ScrollView>
+        </RelativeLayout>
+    </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

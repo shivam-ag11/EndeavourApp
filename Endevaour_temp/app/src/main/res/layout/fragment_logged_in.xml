@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrnd"
+    tools:context="com.kiet.ecell.endeavour.LoggedinFrag">
+
+    <com.kiet.ecell.endeavour.YourTextViewBold
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="WELCOME"
+        android:id="@+id/wel"
+        android:layout_marginBottom="16dp"
+        android:layout_above="@+id/user"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#26a69a"
+        android:textStyle="bold"
+        />
+
+    <com.kiet.ecell.endeavour.YourTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="USER"
+        android:id="@+id/user"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="48dp"
+        android:textColor="#26a69a"
+        android:textAppearance="?android:textAppearanceLarge"
+        />
+</RelativeLayout>

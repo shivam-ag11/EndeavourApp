@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="8dp"
+    android:paddingRight="8dp"
+    android:paddingLeft="8dp"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    android:paddingBottom="8dp" >
+    <com.kiet.ecell.endeavour.YourTextView
+        android:id="@+id/txt_Head1"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:drawablePadding="24dp"
+        android:text="Home"
+        android:visibility="invisible"
+        android:drawableLeft="@drawable/ic_home_white_24dp"
+        android:textSize="16dp"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content" />
+
+    <com.kiet.ecell.endeavour.YourTextView
+        android:id="@+id/txt_Head2"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:drawablePadding="24dp"
+        android:text="Events"
+        android:drawableLeft="@drawable/ic_extension_white_24dp"
+        android:textSize="16dp"
+        android:visibility="invisible"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content" />
+
+    <com.kiet.ecell.endeavour.YourTextView
+        android:id="@+id/txt_Head3"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:drawablePadding="24dp"
+        android:visibility="invisible"
+        android:text="Schedule"
+        android:drawableLeft="@drawable/ic_event_white_24dp"
+        android:textSize="16dp"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content" />
+
+    <com.kiet.ecell.endeavour.YourTextView
+        android:id="@+id/txt_Head4"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:drawablePadding="24dp"
+        android:visibility="invisible"
+        android:text="Sponsors"
+        android:drawableLeft="@drawable/ic_attach_money_white_24dp"
+        android:textSize="16dp"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content" />
+
+    <com.kiet.ecell.endeavour.YourTextView
+        android:id="@+id/txt_Head5"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:drawablePadding="24dp"
+        android:text="About Us"
+        android:visibility="invisible"
+        android:drawableLeft="@drawable/about52"
+        android:textSize="16dp"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content" />
+
+    <com.kiet.ecell.endeavour.YourTextView
+        android:id="@+id/txt_Head6"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:drawablePadding="24dp"
+        android:visibility="invisible"
+        android:text="Contact Us"
+        android:drawableLeft="@drawable/ic_mail_outline_white_24dp"
+        android:textSize="16dp"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content" />
+
+    <com.kiet.ecell.endeavour.YourTextView
+        android:id="@+id/txt_Head7"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:drawablePadding="24dp"
+        android:visibility="invisible"
+        android:text="Logout"
+        android:drawableLeft="@drawable/exit"
+        android:textSize="16dp"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content" />
+
+    <com.kiet.ecell.endeavour.YourTextView
+        android:id="@+id/txt_Head8"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:drawablePadding="24dp"
+        android:visibility="invisible"
+        android:text="Registered Events"
+        android:drawableLeft="@drawable/checked"
+        android:textSize="16dp"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

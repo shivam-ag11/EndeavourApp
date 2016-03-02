@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl"
+    android:layout_gravity="center"
+    android:background="@drawable/backgroundmain"
+    android:paddingBottom="4dp"
+    android:paddingTop="4dp"
+    android:paddingRight="4dp"
+    android:paddingLeft="4dp"
+    tools:context="com.kiet.ecell.endeavour.ScheduleFragment"
+    >
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:id="@+id/hsv"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img"
+            android:src="@drawable/schedule1"/>
+        </HorizontalScrollView>
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

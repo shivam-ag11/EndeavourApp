@@ -1,0 +1,28 @@
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#000000">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/img"
+        android:background="@drawable/tinttedactionbar">
+<ImageView
+    android:src="@drawable/logolarge"
+    android:layout_width="wrap_content"
+    android:layout_height="112dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:layout_centerHorizontal="true"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+    </RelativeLayout>
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:choiceMode="singleChoice"
+    android:background="#000000"
+    android:id="@+id/list"
+    android:layout_marginTop="8dp"
+    android:layout_below="@+id/img"
+    tools:context="com.kiet.ecell.endeavour.NavigationDrawerFragment" />
+    </RelativeLayout>

@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundmain"
+    android:paddingBottom="4dp"
+    android:paddingTop="4dp"
+    android:paddingRight="4dp"
+    android:paddingLeft="4dp"
+    android:gravity="center"
+    tools:context="com.kiet.ecell.endeavour.sponsers">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img50"
+                android:src="@drawable/sponsorsapp"/>
+        </HorizontalScrollView>
+    </ScrollView>
+</RelativeLayout>

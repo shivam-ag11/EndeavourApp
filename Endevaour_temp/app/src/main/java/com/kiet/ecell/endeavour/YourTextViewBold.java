@@ -1,0 +1,37 @@
+package com.kiet.ecell.endeavour;
+
+import android.content.Context;
+import android.graphics.Typeface;
+import android.util.AttributeSet;
+import android.widget.TextView;
+
+import java.util.jar.Attributes;
+
+/**
+ * Created by USER on 02/04/2016.
+ */
+public class YourTextViewBold extends TextView {
+    Context context;
+    public YourTextViewBold(Context context,AttributeSet attributes,int defStyle) {
+        super(context,attributes,defStyle);
+        this.context=context;
+        init();
+    }
+    public YourTextViewBold(Context context,AttributeSet attributes) {
+        super(context,attributes);
+        this.context=context;
+        init();
+    }
+    public YourTextViewBold(Context context) {
+        super(context);
+        this.context=context;
+        init();
+    }
+
+    private void init() {
+        Typeface tf=Typeface.createFromAsset(context.getAssets(),"fonts/ufonts.com_segoe-ui-bold.ttf");
+        setTypeface(tf);
+    }
+
+
+}

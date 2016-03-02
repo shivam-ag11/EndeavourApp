@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kiet.ecell.endeavour.AboutUsFrag"
+    android:background="@drawable/backgroundmain"
+    >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:paddingBottom="16dp"
+        android:background="#e62d2d2d">
+
+        <com.kiet.ecell.endeavour.YourTextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:text="About Us"
+            android:textColor="#26a69a"
+            android:textStyle="bold"
+            android:id="@+id/abt"
+
+            />
+
+        <com.kiet.ecell.endeavour.YourTextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/abt"
+            android:paddingTop="24dp"
+            android:textStyle="bold"
+            android:id="@+id/first"
+            android:textColor="#ffd100"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text="Endeavour is an annual Techno-Entrepreneurial Summit of KIET, Ghaziabad."
+            />
+       <com.kiet.ecell.endeavour.YourTextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textColor="#ffd100"
+           android:layout_below="@+id/first"
+           android:textSize="16dp"
+           android:id="@+id/txt"
+           android:paddingTop="8dp"
+           android:text="First held in 2015, Endeavour has made a name for itself as an avant-garde festival and has successfully managed to imbibe in its enthusiastic participants a sense of belongingness to the competitive world that lies ahead besides uplifting their spirits and re-inventing them.
+
+Through its plethora of events covering all genres of management and technology, Guest lectures from eminent entrepreneurs, project exhibitions etc., ‘Endeavour’ provides an opportunity for students to explore their creativity, leadership qualities, competitive and decision making skills in the real world situations.
+
+Endeavour is presenting its second edition on 26-27th of February’16 with a sole motto to create wonders out of voids and something from nothing. It is a two day long extravaganza with guaranteed fun.
+
+With bigger intentions and ideas, Endeavour looks forward to surmounting greater heights."/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt"
+            android:layout_marginTop="24dp"
+            android:gravity="center">
+
+        <ImageButton
+            android:background="#00000000"
+            android:id="@+id/fb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fb"
+            />
+
+        <ImageButton
+            android:layout_centerHorizontal="true"
+            android:background="#00000000"
+            android:id="@+id/insta"
+            android:layout_toRightOf="@+id/fb"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/insta"
+            />
+
+
+        <ImageButton
+            android:background="#00000000"
+            android:layout_toRightOf="@+id/insta"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/twitt"
+            android:layout_height="wrap_content"
+            android:src="@drawable/twitter"
+            />
+
+            <ImageButton
+                android:background="#00000000"
+                android:layout_toRightOf="@+id/twitt"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/you"
+                android:layout_height="wrap_content"
+                android:src="@drawable/youtube"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
